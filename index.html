@@ -1,148 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic setup and linking of external resources -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mide's Restuarant</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-expand-md bg-body-tertiary">
         <div class="container-fluid bg-danger">
+            <!-- Brand logo and name -->
             <a class="navbar-brand d-flex flex-column align-items-center" href="#">
                 <img class="bg-white rounded-4" src="./resources/mario hat.png" style="width: 30px; height: 30px;" alt="not showing">
                 <p>mide's pizzaria</p>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+            <!-- Toggle button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Navigation links -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#" >Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <section class="d-flex flex-column align-items-center justify-content-center text-center hero">
-        <h1>welcome to mide's Pizzaria</h1>
+        <h1>Welcome to mide's Pizzaria</h1>
         <a class="btn btn-danger" role="button">Order Now!</a>
     </section>
 
+    <!-- MENU SECTION -->
     <section class="bg-white menu">
-        <H2 class="text-center text-uppercase">MENU</H2>
+        <h2 class="text-center text-uppercase">MENU</h2>
         <div class="container">
             <div class="row justify-content-around">
+                
+                <!-- Menu Item 1 -->
                 <div class="col-lg-4 col-12 mb-4 mb-lg-0 card" style="width: 18rem;">
-                    <img src="./resources/pizza backg.jpg" class="card-img-top" alt="...">
+                    <img src="./resources/pizza backg.jpg" class="card-img-top" alt="Pizza Image">
                     <div class="card-body">
                         <h5 class="card-title">Pepperoni Pizza</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <p class="card-text">A tasty pepperoni pizza to satisfy your cravings.</p>
                         <a href="#" class="btn btn-danger">Order</a>
                     </div>
                 </div>
 
+                <!-- Menu Item 2 -->
                 <div class="col-lg-4 col-12 mb-4 mb-lg-0 card" style="width: 18rem;">
-                    <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger.jpg?im=AspectCrop=(16,9);" class="card-img-top" alt="...">
+                    <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger.jpg?im=AspectCrop=(16,9);" class="card-img-top" alt="Burger Image">
                     <div class="card-body">
                         <h5 class="card-title">Beef Burger & Chips</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <p class="card-text">Juicy burger served with crispy fries.</p>
                         <a href="#" class="btn btn-danger">Order</a>
                     </div>
                 </div>
 
+                <!-- Menu Item 3 -->
                 <div class="col-lg-4 col-12 mb-4 mb-lg-0 card" style="width: 18rem;">
-                    <img src="https://supervalu.ie/thumbnail/800x600/var/files/real-food/recipes/Uploaded-2020/spaghetti-bolognese-recipe.jpg" class="card-img-top" alt="...">
+                    <img src="https://supervalu.ie/thumbnail/800x600/var/files/real-food/recipes/Uploaded-2020/spaghetti-bolognese-recipe.jpg" class="card-img-top" alt="Pasta Image">
                     <div class="card-body">
                         <h5 class="card-title">Italian Pasta</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <p class="card-text">Classic Italian pasta with savory sauce.</p>
                         <a href="#" class="btn btn-danger">Order</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-        <section class="container-fluid bg-danger about">
+    <!-- ABOUT US SECTION -->
+    <section class="container-fluid bg-danger about">
         <div class="row align-items-center">
+            
+            <!-- About Text -->
             <div class="col-lg-6 col-12 mb-4 mb-lg-0 left">
                 <h1>ABOUT US</h1>
-                <p style="width: 100%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam modi similique delectus ad quam voluptatibus sapiente illum temporibus qui, quo harum tenetur accusamus numquam ipsa repellat consequatur minima ab quod distinctio?
-                    Expedita numquam dolorem deserunt veniam perspiciatis ipsum inventore voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet... [brief description about the restaurant]</p>
                 <a href="#" class="btn btn-light">Learn More -></a>
             </div>
 
+            <!-- About Image Card -->
             <div class="col-lg-6 col-12 mb-4 mb-lg-0 right mx-auto card" style="width: 18rem;">
-                <img src="https://www.atlanticcouncil.org/wp-content/uploads/2021/02/M_Dohle_5-7-15_8860-edited-3.jpg" class="card-img-top" alt="...">
+                <img src="https://www.atlanticcouncil.org/wp-content/uploads/2021/02/M_Dohle_5-7-15_8860-edited-3.jpg" class="card-img-top" alt="Owner or Location Image">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <p class="card-text">A quick note about our founder or space.</p>
                 </div>
             </div>
-        </div>
 
+        </div>
     </section>
 
-    <section class=" mt-5 container mb-3 contact">
-        <H2 class="text-center text-uppercase">CONTACT US</H2>
+    <!-- CONTACT SECTION -->
+    <section class="mt-5 container mb-3 contact">
+        <h2 class="text-center text-uppercase">CONTACT US</h2>
         <div class="row align-items-center">
+            
+            <!-- Contact Form -->
             <div class="col-lg-6 col-12 p-2 border rounded-1 mb-2 mb-lg-0 info">
                 <h3>GET IN TOUCH</h3>
+
+                <!-- Name Inputs -->
                 <div class="input-group mb-3">
                     <span class="input-group-text">First & last name</span>
                     <input type="text" aria-label="First name" class="form-control">
                     <input type="text" aria-label="Last name" class="form-control">
                 </div>
 
+                <!-- Email Input -->
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon2">
                     <span class="input-group-text" id="basic-addon2">example@mail.com</span>
                 </div>
 
+                <!-- Phone Input -->
                 <div class="input-group input-group-sm mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Phone No.</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    <input type="text" class="form-control">
                 </div>
 
+                <!-- Message Textarea -->
                 <div class="input-group">
                     <span class="input-group-text">Message</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <textarea class="form-control"></textarea>
                 </div>
+
+                <!-- Submit Button -->
                 <div class="d-flex justify-content-center mt-2">
-                <a href="#" class="btn btn-danger">Sumbit</a>
+                    <a href="#" class="btn btn-danger">Submit</a>
                 </div>
             </div>
-            
+
+            <!-- Embedded Google Map -->
             <div class="col-lg-6 col-12 text-center border rounded-1 map">
                 <h3>FIND US</h3>
-                <p></p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.9505111096983!2d7.490744599999999!3d9.0682733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b18e9d3f885%3A0x4e9645d66fbe25f9!2sRiver%20Plate%20Garden!5e0!3m2!1sen!2sng!4v1751276390025!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="450" style="border:0;" allowfullscreen=""></iframe>
             </div>
         </div>
     </section>
 
-    <footer class="container-fluid " style="background-color: #dbdbdb;">
+    <!-- FOOTER SECTION -->
+    <footer class="container-fluid" style="background-color: #dbdbdb;">
         <div class="row align-items-center p-3">
-            <p class="col-lg-6 col-12 text-center text-lg-start mb-2 mb-lg-0">Copyright © 2025 Mide's restuarant. All rights reserved.</p>
-            <div class="col-lg-6 col-12 d-flex justify-content-center justify-content-lg-end" href="#">
-                <ul>
-                    <li><a href=""> <img src="resources/facebook.svg" alt="not working"> </a></li>
-                    <li><a href=""><img src="resources/insta.svg" alt="not working"> </a></li>
-                    <li><a href=""><img src="resources/x.svg" alt=""> </a></li>
-                    <li><a href=""><img src="resources/tiktok.svg" alt=""> </a></li>
-                </ul>
+            <!-- Copyright -->
+            <p class="col-lg-6 col-12 text-center text-lg-start mb-2 mb-lg-0">
+                Copyright © 2025 Mide's restaurant. All rights reserved.
+            </p>
 
+            <!-- Social Media Links -->
+            <div class="col-lg-6 col-12 d-flex justify-content-center justify-content-lg-end">
+                <ul>
+                    <li><a href="#"><img src="resources/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="resources/insta.svg" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="resources/x.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="resources/tiktok.svg" alt="TikTok"></a></li>
+                </ul>
             </div>
         </div>
     </footer>
